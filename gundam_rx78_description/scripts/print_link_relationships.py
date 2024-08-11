@@ -8,7 +8,7 @@ import os
 
 
 class UrdfConst:
-    URDF_EXT = '.urdf'
+    URDF_EXT        = '.urdf'
     LINK_TAG_START  = '  <link name='
     LINK_TAG_END    = '  </link>\n'
     JOINT_TAG_START = '  <joint name='

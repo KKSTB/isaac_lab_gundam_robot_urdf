@@ -8,7 +8,7 @@ import os
 
 
 class UrdfConst:
-    URDF_EXT = '.urdf'
+    URDF_EXT        = '.urdf'
     JOINT_TAG_START = '<joint name="'
     JOINT_TAG_END   = '" type="revolute">'
     CHILD_TAG_START = '<child link="'
