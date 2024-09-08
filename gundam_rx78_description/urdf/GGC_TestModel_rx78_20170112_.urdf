@@ -8,143 +8,143 @@
   <link name="base_link"/>
   <link name="torso_waist_y_link">
     <inertial>
-      <origin xyz="-1.8089530737600002e-10 0.005324006009760001 0.0628964848762" rpy="-0.0231766267228 4.2314211246e-08 -1.96224053535e-07"/>
+      <origin xyz="-1.80895307376e-09 0.0532400600976 0.628964848762" rpy="-0.0231766267228 4.2314211246e-08 -1.96224053535e-07"/>
       <mass value="0.9428742892580002"/>
-      <inertia ixx="0.004348666176320001" ixy="0.0" ixz="0.0" iyy="0.007773873568200002" iyz="0.0" izz="0.008170324907350002"/>
+      <inertia ixx="0.4348666176320001" ixy="0.0" ixz="0.0" iyy="0.7773873568200003" iyz="0.0" izz="0.8170324907350002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_084-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_084-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_084-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_084-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="torso_waist_y_joint" type="revolute">
-    <origin xyz="1e-08 0.0 1.2000000000000002" rpy="0.0 -0.0 1.57079632679"/>
+    <origin xyz="1e-07 0.0 12.0" rpy="0.0 -0.0 1.57079632679"/>
     <axis xyz="0 0 1"/>
     <parent link="base_link"/>
     <child link="torso_waist_y_link"/>
-    <limit effort="1000000000" lower="-0.261799387799" upper="0.261799387799" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.261799387799" upper="0.261799387799" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="torso_waist_p_link">
     <inertial>
-      <origin xyz="-1.5116628184200001e-05 0.0044414668265300005 0.0991438302585" rpy="3.11500705668 0.000138034696992 2.85273166442e-06"/>
+      <origin xyz="-0.000151166281842 0.0444146682653 0.991438302585" rpy="3.11500705668 0.000138034696992 2.85273166442e-06"/>
       <mass value="1.2376299007300002"/>
-      <inertia ixx="0.006570573714040002" ixy="0.0" ixz="0.0" iyy="0.012353844364800004" iyz="0.0" izz="0.013266038070000003"/>
+      <inertia ixx="0.6570573714040002" ixy="0.0" ixz="0.0" iyy="1.2353844364800002" iyz="0.0" izz="1.3266038070000004"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_083-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_083-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_083-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_083-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="torso_waist_p_joint" type="revolute">
-    <origin xyz="0.0 0.0 0.08000000000000002" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0 0.0 0.8" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="torso_waist_y_link"/>
     <child link="torso_waist_p_link"/>
-    <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="torso_waist_p2_link">
     <inertial>
-      <origin xyz="-0.00726424680619 -0.0038024843662300004 0.0930846884303" rpy="-0.607699488506 -0.0994779447075 0.00940129416869"/>
+      <origin xyz="-0.0726424680619 -0.0380248436623 0.930846884303" rpy="-0.607699488506 -0.0994779447075 0.00940129416869"/>
       <mass value="4.926494097780001"/>
-      <inertia ixx="0.05020104948390001" ixy="0.0" ixz="0.0" iyy="0.06792826202480001" iyz="0.0" izz="0.07568647769840002"/>
+      <inertia ixx="5.020104948390001" ixy="0.0" ixz="0.0" iyy="6.7928262024800015" iyz="0.0" izz="7.568647769840002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_080-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_080-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_080-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_080-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="torso_waist_p2_joint" type="revolute">
-    <origin xyz="0.0 0.00028689000000000004 0.10775300000000002" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0 0.0028689 1.07753" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="torso_waist_p_link"/>
     <child link="torso_waist_p2_link"/>
-    <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="head_neck_y_link">
     <inertial>
-      <origin xyz="-0.000295920061547 -0.012879098808200002 0.06133712805700001" rpy="1.43311521698 -0.765253355958 1.75807956225"/>
+      <origin xyz="-0.00295920061547 -0.128790988082 0.61337128057" rpy="1.43311521698 -0.765253355958 1.75807956225"/>
       <mass value="0.17886113964700004"/>
-      <inertia ixx="0.0003159396939410001" ixy="0.0" ixz="0.0" iyy="0.0003221704829950001" iyz="0.0" izz="0.00034408808687000006"/>
+      <inertia ixx="0.03159396939410001" ixy="0.0" ixz="0.0" iyy="0.032217048299500006" iyz="0.0" izz="0.034408808687000005"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_008-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_008-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_008-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_008-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="head_neck_y_joint" type="revolute">
-    <origin xyz="0.0 0.036632 0.14224699999999998" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0 0.36632 1.42247" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 0 1"/>
     <parent link="torso_waist_p2_link"/>
     <child link="head_neck_y_link"/>
-    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="head_neck_p_link">
     <inertial>
-      <origin xyz="0.000169756419171 0.00023552376668699998 0.0827090393182" rpy="2.91191076245 -1.44318878177 -1.41358502465"/>
+      <origin xyz="0.00169756419171 0.00235523766687 0.827090393182" rpy="2.91191076245 -1.44318878177 -1.41358502465"/>
       <mass value="1.1144201977800003"/>
-      <inertia ixx="0.0055534934845400015" ixy="0.0" ixz="0.0" iyy="0.005800747782990001" iyz="0.0" izz="0.0058833494270600015"/>
+      <inertia ixx="0.5553493484540002" ixy="0.0" ixz="0.0" iyy="0.5800747782990001" iyz="0.0" izz="0.5883349427060002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_011-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_011-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_011-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_011-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="head_neck_p_joint" type="revolute">
-    <origin xyz="0.0 -0.0134118 0.0928577" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0 -0.134118 0.928577" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="head_neck_y_link"/>
     <child link="head_neck_p_link"/>
-    <limit effort="1000000000" lower="-0.628318530718" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.628318530718" upper="0.785398163397" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rx78_Null_013_link">
     <inertial>
-      <origin xyz="0.17877870676700003 2.53845919233e-07 0.05879067575130001" rpy="-1.49162451874 3.81588883824e-07 1.57079778555"/>
+      <origin xyz="1.78778706767 2.53845919233e-06 0.587906757513" rpy="-1.49162451874 3.81588883824e-07 1.57079778555"/>
       <mass value="1.5124848935400004"/>
-      <inertia ixx="0.012641210945200003" ixy="0.0" ixz="0.0" iyy="0.014809935760300003" iyz="0.0" izz="0.023364579793600005"/>
+      <inertia ixx="1.2641210945200003" ixy="0.0" ixz="0.0" iyy="1.4809935760300004" iyz="0.0" izz="2.3364579793600004"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_003-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_003-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_003-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_003-lib.dae"/>
       </geometry>
     </collision>
   </link>
@@ -155,107 +155,107 @@
   </joint>
   <link name="rx78_Null_012_link"/>
   <joint name="rx78_Null_012_joint" type="fixed">
-    <origin xyz="0.18471200000000002 -0.15585000000000002 0.194337" rpy="0.0 -0.0 -1.57079532679"/>
+    <origin xyz="1.84712 -1.5585 1.94337" rpy="0.0 -0.0 -1.57079532679"/>
     <parent link="rx78_Null_013_link"/>
     <child link="rx78_Null_012_link"/>
   </joint>
   <link name="rx78_Null_011_link"/>
   <joint name="rx78_Null_011_joint" type="fixed">
-    <origin xyz="5e-08 -2e-08 0.12322" rpy="0.0 -0.0 0.785398163397"/>
+    <origin xyz="5e-07 -2e-07 1.2322" rpy="0.0 -0.0 0.785398163397"/>
     <parent link="rx78_Null_012_link"/>
     <child link="rx78_Null_011_link"/>
   </joint>
   <link name="rx78_Null_010_link">
     <inertial>
-      <origin xyz="0.000161776379369 1.69039844016e-05 -0.0189386999037" rpy="-1.55866597776 -1.56924902496 -0.0191056860432"/>
+      <origin xyz="0.00161776379369 0.000169039844016 -0.189386999037" rpy="-1.55866597776 -1.56924902496 -0.0191056860432"/>
       <mass value="0.05042677353080001"/>
-      <inertia ixx="1.2760130904900002e-05" ixy="0.0" ixz="0.0" iyy="0.0002826547421940001" iyz="0.0" izz="0.00028265481858500004"/>
+      <inertia ixx="0.0012760130904900004" ixy="0.0" ixz="0.0" iyy="0.028265474219400007" iyz="0.0" izz="0.028265481858500006"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_007-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_007-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_007-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_007-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rx78_Null_010_joint" type="fixed">
-    <origin xyz="0.0 -1e-08 1.5000000000000002e-07" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0 -1e-07 1.5e-06" rpy="0.0 -0.0 0.0"/>
     <parent link="rx78_Null_011_link"/>
     <child link="rx78_Null_010_link"/>
   </joint>
   <link name="rx78_Null_009_link"/>
   <joint name="rx78_Null_009_joint" type="fixed">
-    <origin xyz="0.18471300000000002 0.15585100000000002 0.194337" rpy="0.0 -0.0 -1.57079532679"/>
+    <origin xyz="1.84713 1.55851 1.94337" rpy="0.0 -0.0 -1.57079532679"/>
     <parent link="rx78_Null_013_link"/>
     <child link="rx78_Null_009_link"/>
   </joint>
   <link name="rx78_Null_007_link"/>
   <joint name="rx78_Null_007_joint" type="fixed">
-    <origin xyz="-7e-08 4e-08 0.12322" rpy="0.0 -0.0 -0.785398163397"/>
+    <origin xyz="-7e-07 4e-07 1.2322" rpy="0.0 -0.0 -0.785398163397"/>
     <parent link="rx78_Null_009_link"/>
     <child link="rx78_Null_007_link"/>
   </joint>
   <link name="rx78_Null_008_link">
     <inertial>
-      <origin xyz="7.72765510661e-06 1.99478688868e-05 -0.0189386743657" rpy="-0.841721523232 -1.57079502433 -0.759435924784"/>
+      <origin xyz="7.72765510661e-05 0.000199478688868 -0.189386743657" rpy="-0.841721523232 -1.57079502433 -0.759435924784"/>
       <mass value="0.05042671156660001"/>
-      <inertia ixx="1.2760018199400003e-05" ixy="0.0" ixz="0.0" iyy="0.00028265469977900007" iyz="0.0" izz="0.00028265471405600006"/>
+      <inertia ixx="0.0012760018199400004" ixy="0.0" ixz="0.0" iyy="0.02826546997790001" iyz="0.0" izz="0.028265471405600005"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_006-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_006-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_006-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_006-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rx78_Null_008_joint" type="fixed">
-    <origin xyz="0.0 -3e-08 0.0" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0 -3e-07 0.0" rpy="0.0 -0.0 0.0"/>
     <parent link="rx78_Null_007_link"/>
     <child link="rx78_Null_008_link"/>
   </joint>
   <link name="torso_rthrust_p_link">
     <inertial>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.20480000000000007"/>
-      <inertia ixx="0.00021845333333300005" ixy="0.0" ixz="0.0" iyy="0.00021845333333300005" iyz="0.0" izz="0.00021845333333300005"/>
+      <inertia ixx="0.021845333333300007" ixy="0.0" ixz="0.0" iyy="0.021845333333300007" iyz="0.0" izz="0.021845333333300007"/>
     </inertial>
     <collision>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <box size="0.8 0.8 0.8"/>
       </geometry>
     </collision>
   </link>
   <joint name="torso_rthrust_p_joint" type="revolute">
-    <origin xyz="0.209633 0.0644753 -0.0765126" rpy="0.0 -0.0 -1.57079532679"/>
+    <origin xyz="2.09633 0.644753 -0.765126" rpy="0.0 -0.0 -1.57079532679"/>
     <axis xyz="1 0 0"/>
     <parent link="rx78_Null_013_link"/>
     <child link="torso_rthrust_p_link"/>
-    <limit effort="1000000000" lower="-0.785398163397" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.785398163397" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="torso_rthrust_r_link">
     <inertial>
-      <origin xyz="-2.4898948666399998e-05 2.74838493809e-05 -0.04685199083950001" rpy="0.342346564952 -1.57076750978 -1.91314292085"/>
+      <origin xyz="-0.000248989486664 0.000274838493809 -0.468519908395" rpy="0.342346564952 -1.57076750978 -1.91314292085"/>
       <mass value="0.051716551419600014"/>
-      <inertia ixx="3.769550632330001e-05" ixy="0.0" ixz="0.0" iyy="5.590358170310001e-05" iyz="0.0" izz="5.6818937528000014e-05"/>
+      <inertia ixx="0.003769550632330001" ixy="0.0" ixz="0.0" iyy="0.0055903581703100015" iyz="0.0" izz="0.0056818937528000015"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_005-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_005-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_005-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_005-lib.dae"/>
       </geometry>
     </collision>
   </link>
@@ -264,44 +264,44 @@
     <axis xyz="0 1 0"/>
     <parent link="torso_rthrust_p_link"/>
     <child link="torso_rthrust_r_link"/>
-    <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="torso_lthrust_p_link">
     <inertial>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.20480000000000007"/>
-      <inertia ixx="0.00021845333333300005" ixy="0.0" ixz="0.0" iyy="0.00021845333333300005" iyz="0.0" izz="0.00021845333333300005"/>
+      <inertia ixx="0.021845333333300007" ixy="0.0" ixz="0.0" iyy="0.021845333333300007" iyz="0.0" izz="0.021845333333300007"/>
     </inertial>
     <collision>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <box size="0.8 0.8 0.8"/>
       </geometry>
     </collision>
   </link>
   <joint name="torso_lthrust_p_joint" type="revolute">
-    <origin xyz="0.209633 -0.0644748 -0.0765126" rpy="0.0 -0.0 -1.57079532679"/>
+    <origin xyz="2.09633 -0.644748 -0.765126" rpy="0.0 -0.0 -1.57079532679"/>
     <axis xyz="1 0 0"/>
     <parent link="rx78_Null_013_link"/>
     <child link="torso_lthrust_p_link"/>
-    <limit effort="1000000000" lower="-0.785398163397" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.785398163397" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="torso_lthrust_r_link">
     <inertial>
-      <origin xyz="2.48379892666e-05 2.7483870576299998e-05 -0.0468519908846" rpy="-0.34336159314 -1.57076748184 -1.22743374025"/>
+      <origin xyz="0.000248379892666 0.000274838705763 -0.468519908846" rpy="-0.34336159314 -1.57076748184 -1.22743374025"/>
       <mass value="0.051716551588000016"/>
-      <inertia ixx="3.769550659230001e-05" ixy="0.0" ixz="0.0" iyy="5.590358189070001e-05" iyz="0.0" izz="5.681893784560001e-05"/>
+      <inertia ixx="0.003769550659230001" ixy="0.0" ixz="0.0" iyy="0.005590358189070001" iyz="0.0" izz="0.005681893784560001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_004-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_004-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_004-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_004-lib.dae"/>
       </geometry>
     </collision>
   </link>
@@ -310,123 +310,123 @@
     <axis xyz="0 1 0"/>
     <parent link="torso_lthrust_p_link"/>
     <child link="torso_lthrust_r_link"/>
-    <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="larm_shoulder_p_link">
     <inertial>
-      <origin xyz="0.0341759615815 -0.00220562051617 9.54991843459e-07" rpy="-0.00383508360084 -1.07108522052e-08 1.40070368306e-07"/>
+      <origin xyz="0.341759615815 -0.0220562051617 9.54991843459e-06" rpy="-0.00383508360084 -1.07108522052e-08 1.40070368306e-07"/>
       <mass value="0.07066894580510001"/>
-      <inertia ixx="6.165748577450001e-05" ixy="0.0" ixz="0.0" iyy="9.501613750870002e-05" iyz="0.0" izz="9.501616003260003e-05"/>
+      <inertia ixx="0.006165748577450001" ixy="0.0" ixz="0.0" iyy="0.009501613750870002" iyz="0.0" izz="0.009501616003260003"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_063-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_063-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_063-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_063-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_shoulder_p_joint" type="revolute">
-    <origin xyz="0.17200000000000001 0.0369688 0.10724700000000001" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="1.72 0.369688 1.07247" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="torso_waist_p2_link"/>
     <child link="larm_shoulder_p_link"/>
-    <limit effort="1000000000" lower="-3.14159265359" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-3.14159265359" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="larm_shoulder_r_link">
     <inertial>
-      <origin xyz="0.0014415990459600001 -0.000124192654743 0.00277909385279" rpy="1.35401826289 0.937406918108 0.0310383238134"/>
+      <origin xyz="0.0144159904596 -0.00124192654743 0.0277909385279" rpy="1.35401826289 0.937406918108 0.0310383238134"/>
       <mass value="0.3838477215330001"/>
-      <inertia ixx="0.0007943655059200002" ixy="0.0" ixz="0.0" iyy="0.0008863469399050002" iyz="0.0" izz="0.0009786943584690004"/>
+      <inertia ixx="0.07943655059200003" ixy="0.0" ixz="0.0" iyy="0.08863469399050002" iyz="0.0" izz="0.09786943584690003"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_001-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_001-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_001-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_001-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_shoulder_r_joint" type="revolute">
-    <origin xyz="0.09300000000000001 -0.00191881 0.0" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.93 -0.0191881 0.0" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="larm_shoulder_p_link"/>
     <child link="larm_shoulder_r_link"/>
-    <limit effort="1000000000" lower="-0.523598775598" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.523598775598" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="larm_shoulder_y_link">
     <inertial>
-      <origin xyz="-4.99261195306e-06 -0.00030844763332000006 -0.0724959207209" rpy="-1.56508502589 1.53267061853 -1.56538578941"/>
+      <origin xyz="-4.99261195306e-05 -0.0030844763332 -0.724959207209" rpy="-1.56508502589 1.53267061853 -1.56538578941"/>
       <mass value="0.26716551072700007"/>
-      <inertia ixx="0.0005354774986470001" ixy="0.0" ixz="0.0" iyy="0.0006578932439780001" iyz="0.0" izz="0.0007003196916880002"/>
+      <inertia ixx="0.05354774986470001" ixy="0.0" ixz="0.0" iyy="0.06578932439780001" iyz="0.0" izz="0.07003196916880002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_002-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_002-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_002-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_002-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_shoulder_y_joint" type="revolute">
-    <origin xyz="4e-08 0.0 -0.0604907" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="4e-07 0.0 -0.604907" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 0 1"/>
     <parent link="larm_shoulder_r_link"/>
     <child link="larm_shoulder_y_link"/>
-    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="larm_elbow_p_link">
     <inertial>
-      <origin xyz="0.0005117473384869999 0.00432935876575 0.0012504245252700002" rpy="1.96137980272 -1.42267138919 -2.18134944725"/>
+      <origin xyz="0.00511747338487 0.0432935876575 0.0125042452527" rpy="1.96137980272 -1.42267138919 -2.18134944725"/>
       <mass value="0.29983706272900007"/>
-      <inertia ixx="0.00049444671955" ixy="0.0" ixz="0.0" iyy="0.0005361816115280002" iyz="0.0" izz="0.0005689846017780001"/>
+      <inertia ixx="0.049444671955000005" ixy="0.0" ixz="0.0" iyy="0.05361816115280001" iyz="0.0" izz="0.05689846017780001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_062-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_062-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_062-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_062-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_elbow_p_joint" type="revolute">
-    <origin xyz="-2e-08 3.09e-06 -0.15502400000000002" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-2e-07 3.09e-05 -1.55024" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="larm_shoulder_y_link"/>
     <child link="larm_elbow_p_link"/>
-    <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="larm_elbow_p2_link">
     <inertial>
-      <origin xyz="0.00010059234049100001 0.00043251903065100005 -0.137935389553" rpy="-0.0921351120103 -1.56893026006 0.119178150447"/>
+      <origin xyz="0.00100592340491 0.00432519030651 -1.37935389553" rpy="-0.0921351120103 -1.56893026006 0.119178150447"/>
       <mass value="0.7135634524730001"/>
-      <inertia ixx="0.0015997068144700003" ixy="0.0" ixz="0.0" iyy="0.00391548345774" iyz="0.0" izz="0.004067096324190001"/>
+      <inertia ixx="0.15997068144700005" ixy="0.0" ixz="0.0" iyy="0.39154834577400005" iyz="0.0" izz="0.4067096324190001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_064-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_064-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_064-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_064-lib.dae"/>
       </geometry>
     </collision>
   </link>
@@ -435,1281 +435,1281 @@
     <axis xyz="1 0 0"/>
     <parent link="larm_elbow_p_link"/>
     <child link="larm_elbow_p2_link"/>
-    <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="larm_wrist_y_link">
     <inertial>
-      <origin xyz="0.0063729131318500006 -5.49129312069e-05 -0.006675065781679999" rpy="1.57250508518 1.3652824771 0.00153963424253"/>
+      <origin xyz="0.0637291313185 -0.000549129312069 -0.0667506578168" rpy="1.57250508518 1.3652824771 0.00153963424253"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="1.3320061216400004e-05" ixy="0.0" ixz="0.0" iyy="2.217017713240001e-05" iyz="0.0" izz="2.3549500890800006e-05"/>
+      <inertia ixx="0.0013320061216400003" ixy="0.0" ixz="0.0" iyy="0.002217017713240001" iyz="0.0" izz="0.0023549500890800005"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_061-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_061-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_061-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_061-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_wrist_y_joint" type="revolute">
-    <origin xyz="-8e-08 -3.0700000000000003e-06 -0.25148600000000004" rpy="0.0 9.99999997475e-07 0.0"/>
+    <origin xyz="-8e-07 -3.07e-05 -2.51486" rpy="0.0 9.99999997475e-07 0.0"/>
     <axis xyz="0 0 1"/>
     <parent link="larm_elbow_p2_link"/>
     <child link="larm_wrist_y_link"/>
-    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="larm_wrist_r_link">
     <inertial>
-      <origin xyz="-0.009219651857690001 0.00010679927699300001 -0.0365632777877" rpy="1.55541267479 -0.75656602586 1.59074154928"/>
+      <origin xyz="-0.0921965185769 0.00106799276993 -0.365632777877" rpy="1.55541267479 -0.75656602586 1.59074154928"/>
       <mass value="0.059027289240400016"/>
-      <inertia ixx="5.543651547250001e-05" ixy="0.0" ixz="0.0" iyy="5.793022996750002e-05" iyz="0.0" izz="8.552106786650003e-05"/>
+      <inertia ixx="0.005543651547250001" ixy="0.0" ixz="0.0" iyy="0.005793022996750002" iyz="0.0" izz="0.008552106786650002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_060-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_060-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_060-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_060-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_wrist_r_joint" type="revolute">
-    <origin xyz="0.0136895 -1e-08 -0.023974400000000003" rpy="9.99999997475e-07 -0.0 0.0"/>
+    <origin xyz="0.136895 -1e-07 -0.239744" rpy="9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="larm_wrist_y_link"/>
     <child link="larm_wrist_r_link"/>
-    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="larm_gripper_middle0_mimic_link">
     <inertial>
-      <origin xyz="-0.00110922897192 6.303815783930001e-05 -0.0121403679652" rpy="1.55815632948 1.48889465655 0.00612439029331"/>
+      <origin xyz="-0.0110922897192 0.000630381578393 -0.121403679652" rpy="1.55815632948 1.48889465655 0.00612439029331"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.853256154150001e-06" ixy="0.0" ixz="0.0" iyy="5.459178479800001e-06" iyz="0.0" izz="5.8119362484000016e-06"/>
+      <inertia ixx="0.00028532561541500006" ixy="0.0" ixz="0.0" iyy="0.0005459178479800001" iyz="0.0" izz="0.0005811936248400002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_067-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_067-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_067-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_067-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_middle0_mimic_joint" type="revolute">
-    <origin xyz="-0.006837840000000001 0.0310822 -0.07829660000000001" rpy="-9.99999997475e-07 -0.0 0.0"/>
+    <origin xyz="-0.0683784 0.310822 -0.782966" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="larm_wrist_r_link"/>
     <child link="larm_gripper_middle0_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="larm_gripper_middle1_mimic_link">
     <inertial>
-      <origin xyz="0.0025424383351200005 -5.880648241210001e-08 -0.018318453849" rpy="-0.557131102339 -1.57079268417 2.1279182466"/>
+      <origin xyz="0.0254243833512 -5.88064824121e-07 -0.18318453849" rpy="-0.557131102339 -1.57079268417 2.1279182466"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="3.2242697431400012e-06" ixy="0.0" ixz="0.0" iyy="1.0516011887500003e-05" iyz="0.0" izz="1.1102918355300002e-05"/>
+      <inertia ixx="0.0003224269743140001" ixy="0.0" ixz="0.0" iyy="0.0010516011887500003" iyz="0.0" izz="0.0011102918355300002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_066-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_066-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_066-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_066-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_middle1_mimic_joint" type="revolute">
-    <origin xyz="-0.00498726 -8e-08 -0.029534500000000005" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-0.0498726 -8e-07 -0.295345" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="larm_gripper_middle0_mimic_link"/>
     <child link="larm_gripper_middle1_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="larm_gripper_middle2_mimic_link">
     <inertial>
-      <origin xyz="0.0037385306141200004 -2.26721840637e-08 -0.017509446352300003" rpy="-1.57088599529 -1.54962703686 9.60535197295e-05"/>
+      <origin xyz="0.0373853061412 -2.26721840637e-07 -0.175094463523" rpy="-1.57088599529 -1.54962703686 9.60535197295e-05"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.5097171286400005e-06" ixy="0.0" ixz="0.0" iyy="6.172195843700002e-06" iyz="0.0" izz="6.473942302800002e-06"/>
+      <inertia ixx="0.00025097171286400004" ixy="0.0" ixz="0.0" iyy="0.0006172195843700002" iyz="0.0" izz="0.0006473942302800002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_065-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_065-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_065-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_065-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_middle2_mimic_joint" type="revolute">
-    <origin xyz="1e-07 2e-08 -0.0366374" rpy="-9.00000031809e-06 -4.99999987365e-06 0.0"/>
+    <origin xyz="1e-06 2e-07 -0.366374" rpy="-9.00000031809e-06 -4.99999987365e-06 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="larm_gripper_middle1_mimic_link"/>
     <child link="larm_gripper_middle2_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="larm_gripper_ring0_mimic_link">
     <inertial>
-      <origin xyz="-0.00110922828006 6.30772215227e-05 -0.0121403660586" rpy="1.55815579991 1.48889557826 0.00611811197789"/>
+      <origin xyz="-0.0110922828006 0.000630772215227 -0.121403660586" rpy="1.55815579991 1.48889557826 0.00611811197789"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.8532589768700008e-06" ixy="0.0" ixz="0.0" iyy="5.4591798128800005e-06" iyz="0.0" izz="5.811934464430001e-06"/>
+      <inertia ixx="0.00028532589768700005" ixy="0.0" ixz="0.0" iyy="0.0005459179812880001" iyz="0.0" izz="0.0005811934464430001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_070-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_070-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_070-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_070-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_ring0_mimic_joint" type="revolute">
-    <origin xyz="-0.00683781 0.00989056 -0.0842841" rpy="-9.99999997475e-07 -0.0 0.0"/>
+    <origin xyz="-0.0683781 0.0989056 -0.842841" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="larm_wrist_r_link"/>
     <child link="larm_gripper_ring0_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="larm_gripper_ring1_mimic_link">
     <inertial>
-      <origin xyz="0.0025424866665900003 -8.11582940447e-08 -0.018318452896599998" rpy="-0.542959645179 -1.57079262809 2.11374270423"/>
+      <origin xyz="0.0254248666659 -8.11582940447e-07 -0.183184528966" rpy="-0.542959645179 -1.57079262809 2.11374270423"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="3.224270237860001e-06" ixy="0.0" ixz="0.0" iyy="1.0516013410500003e-05" iyz="0.0" izz="1.1102914612800002e-05"/>
+      <inertia ixx="0.0003224270237860001" ixy="0.0" ixz="0.0" iyy="0.0010516013410500002" iyz="0.0" izz="0.00111029146128"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_069-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_069-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_069-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_069-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_ring1_mimic_joint" type="revolute">
-    <origin xyz="-0.00498724 -7e-08 -0.029534500000000005" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-0.0498724 -7e-07 -0.295345" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="larm_gripper_ring0_mimic_link"/>
     <child link="larm_gripper_ring1_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="larm_gripper_ring2_mimic_link">
     <inertial>
-      <origin xyz="0.00373852082779 -2.67240520792e-08 -0.017509512831800002" rpy="-1.57089195754 -1.54962703032 9.56077324422e-05"/>
+      <origin xyz="0.0373852082779 -2.67240520792e-07 -0.175095128318" rpy="-1.57089195754 -1.54962703032 9.56077324422e-05"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.5097182940900006e-06" ixy="0.0" ixz="0.0" iyy="6.172199966700002e-06" iyz="0.0" izz="6.473942557230002e-06"/>
+      <inertia ixx="0.00025097182940900004" ixy="0.0" ixz="0.0" iyy="0.0006172199966700002" iyz="0.0" izz="0.0006473942557230002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_068-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_068-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_068-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_068-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_ring2_mimic_joint" type="revolute">
-    <origin xyz="1.5000000000000002e-07 1e-08 -0.0366374" rpy="-7.99999997963e-06 -4.99999987365e-06 0.0"/>
+    <origin xyz="1.5e-06 1e-07 -0.366374" rpy="-7.99999997963e-06 -4.99999987365e-06 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="larm_gripper_ring1_mimic_link"/>
     <child link="larm_gripper_ring2_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="larm_gripper_little0_mimic_link">
     <inertial>
-      <origin xyz="-0.0011091971913900001 6.3014985517e-05 -0.0121403666309" rpy="1.55815383555 1.48889480872 0.00612028991399"/>
+      <origin xyz="-0.0110919719139 0.00063014985517 -0.121403666309" rpy="1.55815383555 1.48889480872 0.00612028991399"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.8532595270300007e-06" ixy="0.0" ixz="0.0" iyy="5.459176645680001e-06" iyz="0.0" izz="5.8119386583900015e-06"/>
+      <inertia ixx="0.00028532595270300005" ixy="0.0" ixz="0.0" iyy="0.0005459176645680001" iyz="0.0" izz="0.0005811938658390001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_053-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_053-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_053-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_053-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_little0_mimic_joint" type="revolute">
-    <origin xyz="-0.00683781 -0.010563300000000001 -0.08771390000000001" rpy="-9.99999997475e-07 -0.0 0.0"/>
+    <origin xyz="-0.0683781 -0.105633 -0.877139" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="larm_wrist_r_link"/>
     <child link="larm_gripper_little0_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="larm_gripper_little1_mimic_link">
     <inertial>
-      <origin xyz="0.00254251617069 -7.238996471370001e-08 -0.018318442315500002" rpy="-0.626080973343 -1.57079251676 2.1968692888"/>
+      <origin xyz="0.0254251617069 -7.23899647137e-07 -0.183184423155" rpy="-0.626080973343 -1.57079251676 2.1968692888"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="3.2242719461200007e-06" ixy="0.0" ixz="0.0" iyy="1.0516009652000003e-05" iyz="0.0" izz="1.1102918794700004e-05"/>
+      <inertia ixx="0.00032242719461200004" ixy="0.0" ixz="0.0" iyy="0.0010516009652000002" iyz="0.0" izz="0.0011102918794700003"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_052-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_052-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_052-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_052-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_little1_mimic_joint" type="revolute">
-    <origin xyz="-0.00498724 -7e-08 -0.029534500000000005" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-0.0498724 -7e-07 -0.295345" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="larm_gripper_little0_mimic_link"/>
     <child link="larm_gripper_little1_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="larm_gripper_little2_mimic_link">
     <inertial>
-      <origin xyz="0.00373859112126 -5.33698315504e-08 -0.0175095145688" rpy="-1.57091281127 -1.5496297216 0.000122590732961"/>
+      <origin xyz="0.0373859112126 -5.33698315504e-07 -0.175095145688" rpy="-1.57091281127 -1.5496297216 0.000122590732961"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.5097180711500005e-06" ixy="0.0" ixz="0.0" iyy="6.172196340580001e-06" iyz="0.0" izz="6.473943795770001e-06"/>
+      <inertia ixx="0.00025097180711500006" ixy="0.0" ixz="0.0" iyy="0.0006172196340580001" iyz="0.0" izz="0.0006473943795770001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_071-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_071-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_071-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_071-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_little2_mimic_joint" type="revolute">
-    <origin xyz="1e-07 2e-08 -0.0366374" rpy="-6.00000021215e-06 -4.99999987365e-06 0.0"/>
+    <origin xyz="1e-06 2e-07 -0.366374" rpy="-6.00000021215e-06 -4.99999987365e-06 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="larm_gripper_little1_mimic_link"/>
     <child link="larm_gripper_little2_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="larm_gripper_index0_mimic_link">
     <inertial>
-      <origin xyz="-0.00110918509989 6.30320268856e-05 -0.0121403663375" rpy="1.55815884987 1.4888940348 0.00612161911496"/>
+      <origin xyz="-0.0110918509989 0.000630320268856 -0.121403663375" rpy="1.55815884987 1.4888940348 0.00612161911496"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.853259767110001e-06" ixy="0.0" ixz="0.0" iyy="5.459176230990002e-06" iyz="0.0" izz="5.8119376756000015e-06"/>
+      <inertia ixx="0.00028532597671100007" ixy="0.0" ixz="0.0" iyy="0.0005459176230990002" iyz="0.0" izz="0.0005811937675600001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_056-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_056-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_056-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_056-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_index0_mimic_joint" type="revolute">
-    <origin xyz="-0.006837790000000001 -0.031073000000000003 -0.0853204" rpy="-9.99999997475e-07 -0.0 0.0"/>
+    <origin xyz="-0.0683779 -0.31073 -0.853204" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="larm_wrist_r_link"/>
     <child link="larm_gripper_index0_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="larm_gripper_index1_mimic_link">
     <inertial>
-      <origin xyz="0.00254241426418 -9.5101421139e-08 -0.018318496019300003" rpy="0.22193897319 -1.57079131916 1.34884297607"/>
+      <origin xyz="0.0254241426418 -9.5101421139e-07 -0.183184960193" rpy="0.22193897319 -1.57079131916 1.34884297607"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="3.2242749819100005e-06" ixy="0.0" ixz="0.0" iyy="1.0516011614100004e-05" iyz="0.0" izz="1.1102920889400004e-05"/>
+      <inertia ixx="0.00032242749819100003" ixy="0.0" ixz="0.0" iyy="0.0010516011614100003" iyz="0.0" izz="0.0011102920889400002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_055-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_055-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_055-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_055-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_index1_mimic_joint" type="revolute">
-    <origin xyz="-0.00498724 -9e-08 -0.0295346" rpy="0.0 -9.99999997475e-07 0.0"/>
+    <origin xyz="-0.0498724 -9e-07 -0.295346" rpy="0.0 -9.99999997475e-07 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="larm_gripper_index0_mimic_link"/>
     <child link="larm_gripper_index1_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="larm_gripper_index2_mimic_link">
     <inertial>
-      <origin xyz="0.00373854289676 -3.680762380620001e-08 -0.0175097290045" rpy="-1.57069419884 1.54962987383 -3.14149471802"/>
+      <origin xyz="0.0373854289676 -3.68076238062e-07 -0.175097290045" rpy="-1.57069419884 1.54962987383 -3.14149471802"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.5097181500800004e-06" ixy="0.0" ixz="0.0" iyy="6.172195617070002e-06" iyz="0.0" izz="6.473943438740001e-06"/>
+      <inertia ixx="0.00025097181500800006" ixy="0.0" ixz="0.0" iyy="0.0006172195617070002" iyz="0.0" izz="0.0006473943438740002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_054-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_054-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_054-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_054-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_index2_mimic_joint" type="revolute">
-    <origin xyz="1e-07 0.0 -0.0366374" rpy="-7.0000000959e-06 -4.99999987365e-06 0.0"/>
+    <origin xyz="1e-06 0.0 -0.366374" rpy="-7.0000000959e-06 -4.99999987365e-06 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="larm_gripper_index1_mimic_link"/>
     <child link="larm_gripper_index2_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="larm_gripper_link">
     <inertial>
-      <origin xyz="-1.3027391510800002e-06 -0.012129346220200002 -0.00045971189033700005" rpy="1.56843108118 -0.337788468633 1.56904194024"/>
+      <origin xyz="-1.30273915108e-05 -0.121293462202 -0.00459711890337" rpy="1.56843108118 -0.337788468633 1.56904194024"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="4.284939609920001e-06" ixy="0.0" ixz="0.0" iyy="8.483859613010002e-06" iyz="0.0" izz="9.362603803820002e-06"/>
+      <inertia ixx="0.00042849396099200007" ixy="0.0" ixz="0.0" iyy="0.0008483859613010002" iyz="0.0" izz="0.0009362603803820002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_059-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_059-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_059-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_059-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_joint" type="revolute">
-    <origin xyz="-0.0265212 -0.0284142 -0.00825119" rpy="0.0 1.99999999495e-06 0.0"/>
+    <origin xyz="-0.265212 -0.284142 -0.0825119" rpy="0.0 1.99999999495e-06 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="larm_wrist_r_link"/>
     <child link="larm_gripper_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="larm_gripper_thumb1_mimic_link">
     <inertial>
-      <origin xyz="-4.608840199620001e-06 -0.0025497764416900002 -0.0183123111681" rpy="0.512304698221 1.57079455531 0.512300208958"/>
+      <origin xyz="-4.60884019962e-05 -0.0254977644169 -0.183123111681" rpy="0.512304698221 1.57079455531 0.512300208958"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="3.224265332620001e-06" ixy="0.0" ixz="0.0" iyy="1.0515948211200001e-05" iyz="0.0" izz="1.1102858070800001e-05"/>
+      <inertia ixx="0.00032242653326200005" ixy="0.0" ixz="0.0" iyy="0.0010515948211200002" iyz="0.0" izz="0.0011102858070800002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_058-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_058-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_058-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_058-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_thumb1_mimic_joint" type="revolute">
-    <origin xyz="4e-08 -0.0248849 -0.0170409" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="4e-07 -0.248849 -0.170409" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="larm_gripper_link"/>
     <child link="larm_gripper_thumb1_mimic_link"/>
-    <limit effort="1000000000" lower="-0.628318530718" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.14537232162125" upper="0.9817477042412501" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0" offset="-0.785398163397"/>
   </joint>
   <link name="larm_gripper_thumb2_mimic_link">
     <inertial>
-      <origin xyz="-4.65290834003e-06 -0.00374335664999 -0.0175089267918" rpy="1.57081492166 1.54962955498 1.57081696167"/>
+      <origin xyz="-4.65290834003e-05 -0.0374335664999 -0.175089267918" rpy="1.57081492166 1.54962955498 1.57081696167"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.509717537050001e-06" ixy="0.0" ixz="0.0" iyy="6.172187068160001e-06" iyz="0.0" izz="6.473939446060001e-06"/>
+      <inertia ixx="0.00025097175370500006" ixy="0.0" ixz="0.0" iyy="0.0006172187068160002" iyz="0.0" izz="0.0006473939446060001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_057-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_057-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_057-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_057-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="larm_gripper_thumb2_mimic_joint" type="revolute">
-    <origin xyz="1.7000000000000001e-07 -2.49e-06 -0.0366318" rpy="-9.99999997475e-07 -0.0 0.0"/>
+    <origin xyz="1.7e-06 -2.49e-05 -0.366318" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="larm_gripper_thumb1_mimic_link"/>
     <child link="larm_gripper_thumb2_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="larm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_065_link"/>
   <joint name="rx78_Null_065_joint" type="fixed">
-    <origin xyz="-4e-08 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-4e-07 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     <parent link="larm_elbow_p2_link"/>
     <child link="rx78_Null_065_link"/>
   </joint>
   <link name="rx78_Null_048_link">
     <inertial>
-      <origin xyz="0.07577626150620001 -0.00028670084101499997 0.029798742369" rpy="3.14154428198 -0.858695371579 6.82204940369e-05"/>
+      <origin xyz="0.757762615062 -0.00286700841015 0.29798742369" rpy="3.14154428198 -0.858695371579 6.82204940369e-05"/>
       <mass value="1.0188889687400002"/>
-      <inertia ixx="0.004254374486410001" ixy="0.0" ixz="0.0" iyy="0.004473907825950001" iyz="0.0" izz="0.005098429016210001"/>
+      <inertia ixx="0.4254374486410001" ixy="0.0" ixz="0.0" iyy="0.44739078259500015" iyz="0.0" izz="0.5098429016210001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_045-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_045-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_045-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_045-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rx78_Null_048_joint" type="fixed">
-    <origin xyz="0.028000000000000004 -0.0019188 0.0" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.28 -0.019188 0.0" rpy="0.0 -0.0 0.0"/>
     <parent link="larm_shoulder_p_link"/>
     <child link="rx78_Null_048_link"/>
   </joint>
   <link name="rarm_shoulder_p_link">
     <inertial>
-      <origin xyz="-0.0341759469554 -0.00028684290788600004 2.14474281231e-06" rpy="-0.000805253061973 6.083704851e-08 1.75257035591e-07"/>
+      <origin xyz="-0.341759469554 -0.00286842907886 2.14474281231e-05" rpy="-0.000805253061973 6.083704851e-08 1.75257035591e-07"/>
       <mass value="0.07066894306440001"/>
-      <inertia ixx="6.165747822090002e-05" ixy="0.0" ixz="0.0" iyy="9.501613696560002e-05" iyz="0.0" izz="9.501615815380002e-05"/>
+      <inertia ixx="0.006165747822090002" ixy="0.0" ixz="0.0" iyy="0.009501613696560001" iyz="0.0" izz="0.009501615815380001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_078-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_078-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_078-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_078-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_shoulder_p_joint" type="revolute">
-    <origin xyz="-0.17200000000000001 0.034999999999999996 0.107245" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-1.72 0.35 1.07245" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="torso_waist_p2_link"/>
     <child link="rarm_shoulder_p_link"/>
-    <limit effort="1000000000" lower="-3.14159265359" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-3.14159265359" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rarm_shoulder_r_link">
     <inertial>
-      <origin xyz="-0.0031691298667200006 -0.000236679793645 0.0036931674137700003" rpy="1.5707989413 1.36931310995 3.52057973764e-06"/>
+      <origin xyz="-0.0316912986672 -0.00236679793645 0.0369316741377" rpy="1.5707989413 1.36931310995 3.52057973764e-06"/>
       <mass value="0.36819225087000007"/>
-      <inertia ixx="0.0007878352256040002" ixy="0.0" ixz="0.0" iyy="0.0008331676875520003" iyz="0.0" izz="0.0009256811532620002"/>
+      <inertia ixx="0.07878352256040003" ixy="0.0" ixz="0.0" iyy="0.08331676875520003" iyz="0.0" izz="0.09256811532620002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_046-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_046-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_046-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_046-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_shoulder_r_joint" type="revolute">
-    <origin xyz="-0.09300000000000001 -4e-08 2.29e-06" rpy="0.0 1.99999999495e-06 0.0"/>
+    <origin xyz="-0.93 -4e-07 2.29e-05" rpy="0.0 1.99999999495e-06 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_shoulder_p_link"/>
     <child link="rarm_shoulder_r_link"/>
-    <limit effort="1000000000" lower="-1.57079632679" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.57079632679" upper="0.523598775598" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rarm_shoulder_y_link">
     <inertial>
-      <origin xyz="5.64790768457e-05 -0.00019526521402600002 -0.0716757097172" rpy="-1.68084860405 1.51629173751 -1.66754887886"/>
+      <origin xyz="0.000564790768457 -0.00195265214026 -0.716757097172" rpy="-1.68084860405 1.51629173751 -1.66754887886"/>
       <mass value="0.26377228703500005"/>
-      <inertia ixx="0.0005312832438420001" ixy="0.0" ixz="0.0" iyy="0.0006416689934160001" iyz="0.0" izz="0.0006859418650600002"/>
+      <inertia ixx="0.05312832438420001" ixy="0.0" ixz="0.0" iyy="0.06416689934160001" iyz="0.0" izz="0.06859418650600002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_077-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_077-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_077-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_077-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_shoulder_y_joint" type="revolute">
-    <origin xyz="1e-07 -9e-08 -0.0604907" rpy="0.0 -1.99999999495e-06 0.0"/>
+    <origin xyz="1e-06 -9e-07 -0.604907" rpy="0.0 -1.99999999495e-06 0.0"/>
     <axis xyz="0 0 1"/>
     <parent link="rarm_shoulder_r_link"/>
     <child link="rarm_shoulder_y_link"/>
-    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rarm_elbow_p_link">
     <inertial>
-      <origin xyz="-0.00034537425462500003 0.007107212658169999 0.00021651775285700002" rpy="1.30212539629 -1.31900697169 1.93765236648"/>
+      <origin xyz="-0.00345374254625 0.0710721265817 0.00216517752857" rpy="1.30212539629 -1.31900697169 1.93765236648"/>
       <mass value="0.2830332510410001"/>
-      <inertia ixx="0.00047907767165300015" ixy="0.0" ixz="0.0" iyy="0.0005135224462860001" iyz="0.0" izz="0.0005326987120520001"/>
+      <inertia ixx="0.047907767165300014" ixy="0.0" ixz="0.0" iyy="0.05135224462860001" iyz="0.0" izz="0.05326987120520001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_076-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_076-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_076-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_076-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_elbow_p_joint" type="revolute">
-    <origin xyz="6e-08 2.88e-06 -0.15502400000000002" rpy="-3.0000001061e-06 -9.99999997475e-07 0.0"/>
+    <origin xyz="6e-07 2.88e-05 -1.55024" rpy="-3.0000001061e-06 -9.99999997475e-07 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rarm_shoulder_y_link"/>
     <child link="rarm_elbow_p_link"/>
-    <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rarm_elbow_p2_link">
     <inertial>
-      <origin xyz="-0.000275576910103 -0.00011034431869300001 -0.135789645655" rpy="0.923029235723 1.5571424345 -2.22133499466"/>
+      <origin xyz="-0.00275576910103 -0.00110344318693 -1.35789645655" rpy="0.923029235723 1.5571424345 -2.22133499466"/>
       <mass value="0.7060050681820002"/>
-      <inertia ixx="0.0015990072951000004" ixy="0.0" ixz="0.0" iyy="0.004022996637900001" iyz="0.0" izz="0.004166344338410001"/>
+      <inertia ixx="0.15990072951000003" ixy="0.0" ixz="0.0" iyy="0.4022996637900001" iyz="0.0" izz="0.4166344338410001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_075-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_075-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_075-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_075-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_elbow_p2_joint" type="revolute">
-    <origin xyz="2e-08 0.0 0.0" rpy="1.99999999495e-06 -0.0 0.0"/>
+    <origin xyz="2e-07 0.0 0.0" rpy="1.99999999495e-06 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rarm_elbow_p_link"/>
     <child link="rarm_elbow_p2_link"/>
-    <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rarm_wrist_y_link">
     <inertial>
-      <origin xyz="-0.006372878438800001 -3.47682587857e-06 -0.00667593333801" rpy="-1.57250911436 1.36528341468 3.14004951952"/>
+      <origin xyz="-0.063728784388 -3.47682587857e-05 -0.0667593333801" rpy="-1.57250911436 1.36528341468 3.14004951952"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="1.3320050761300002e-05" ixy="0.0" ixz="0.0" iyy="2.2170143139900004e-05" iyz="0.0" izz="2.3549446948400004e-05"/>
+      <inertia ixx="0.0013320050761300003" ixy="0.0" ixz="0.0" iyy="0.0022170143139900005" iyz="0.0" izz="0.0023549446948400005"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_047-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_047-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_047-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_047-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_wrist_y_joint" type="revolute">
-    <origin xyz="-1e-07 -3.74e-06 -0.25148600000000004" rpy="-9.99999997475e-07 -1.99999999495e-06 0.0"/>
+    <origin xyz="-1e-06 -3.74e-05 -2.51486" rpy="-9.99999997475e-07 -1.99999999495e-06 0.0"/>
     <axis xyz="0 0 1"/>
     <parent link="rarm_elbow_p2_link"/>
     <child link="rarm_wrist_y_link"/>
-    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rarm_wrist_r_link">
     <inertial>
-      <origin xyz="0.00921745487889 0.000158343270366 -0.0395640286388" rpy="1.58618213196 -0.756564122742 1.55085045194"/>
+      <origin xyz="0.0921745487889 0.00158343270366 -0.395640286388" rpy="1.58618213196 -0.756564122742 1.55085045194"/>
       <mass value="0.05902727266080002"/>
-      <inertia ixx="5.5436496824500013e-05" ixy="0.0" ixz="0.0" iyy="5.793019203250002e-05" iyz="0.0" izz="8.552101533220002e-05"/>
+      <inertia ixx="0.005543649682450001" ixy="0.0" ixz="0.0" iyy="0.005793019203250002" iyz="0.0" izz="0.008552101533220002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_048-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_048-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_048-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_048-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_wrist_r_joint" type="revolute">
-    <origin xyz="-0.013688100000000002 -1e-08 -0.0209745" rpy="1.99999999495e-06 1.99999999495e-06 0.0"/>
+    <origin xyz="-0.136881 -1e-07 -0.209745" rpy="1.99999999495e-06 1.99999999495e-06 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_wrist_y_link"/>
     <child link="rarm_wrist_r_link"/>
-    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rarm_gripper_link">
     <inertial>
-      <origin xyz="1.30989542991e-06 -0.012129345234100001 -0.00045948056761500004" rpy="1.57316518734 -0.337785810697 1.57255010494"/>
+      <origin xyz="1.30989542991e-05 -0.121293452341 -0.00459480567615" rpy="1.57316518734 -0.337785810697 1.57255010494"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="4.284937879690001e-06" ixy="0.0" ixz="0.0" iyy="8.483856739750002e-06" iyz="0.0" izz="9.362599160700002e-06"/>
+      <inertia ixx="0.0004284937879690001" ixy="0.0" ixz="0.0" iyy="0.0008483856739750002" iyz="0.0" izz="0.0009362599160700003"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_051-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_051-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_051-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_051-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_joint" type="revolute">
-    <origin xyz="0.026520000000000002 -0.0284142 -0.0112511" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.2652 -0.284142 -0.112511" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_wrist_r_link"/>
     <child link="rarm_gripper_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rarm_gripper_thumb1_mimic_link">
     <inertial>
-      <origin xyz="4.66026768099e-06 -0.00254980798052 -0.0183122145539" rpy="-2.60331362051 -1.57079506749 -0.538288983058"/>
+      <origin xyz="4.66026768099e-05 -0.0254980798052 -0.183122145539" rpy="-2.60331362051 -1.57079506749 -0.538288983058"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="3.2242674030400005e-06" ixy="0.0" ixz="0.0" iyy="1.0515950321300002e-05" iyz="0.0" izz="1.1102851380400004e-05"/>
+      <inertia ixx="0.0003224267403040001" ixy="0.0" ixz="0.0" iyy="0.0010515950321300003" iyz="0.0" izz="0.0011102851380400004"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_050-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_050-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_050-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_050-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_thumb1_mimic_joint" type="revolute">
-    <origin xyz="-6e-08 -0.024884800000000002 -0.0170409" rpy="-1.99999999495e-06 1.99999999495e-06 0.0"/>
+    <origin xyz="-6e-07 -0.248848 -0.170409" rpy="-1.99999999495e-06 1.99999999495e-06 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rarm_gripper_link"/>
     <child link="rarm_gripper_thumb1_mimic_link"/>
-    <limit effort="1000000000" lower="-0.628318530718" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.14537232162125" upper="0.9817477042412501" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0" offset="-0.785398163397"/>
   </joint>
   <link name="rarm_gripper_thumb2_mimic_link">
     <inertial>
-      <origin xyz="4.6167238092e-06 -0.00374345635809 -0.0175090186997" rpy="1.57096073188 1.54963305308 1.57096272179"/>
+      <origin xyz="4.6167238092e-05 -0.0374345635809 -0.175090186997" rpy="1.57096073188 1.54963305308 1.57096272179"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.5097159874400005e-06" ixy="0.0" ixz="0.0" iyy="6.172185323090002e-06" iyz="0.0" izz="6.4739312287900015e-06"/>
+      <inertia ixx="0.000250971598744" ixy="0.0" ixz="0.0" iyy="0.0006172185323090002" iyz="0.0" izz="0.0006473931228790002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_049-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_049-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_049-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_049-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_thumb2_mimic_joint" type="revolute">
-    <origin xyz="4e-08 -2.5400000000000002e-06 -0.0366319" rpy="0.0 -1.99999999495e-06 0.0"/>
+    <origin xyz="4e-07 -2.54e-05 -0.366319" rpy="0.0 -1.99999999495e-06 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rarm_gripper_thumb1_mimic_link"/>
     <child link="rarm_gripper_thumb2_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rarm_gripper_middle0_mimic_link">
     <inertial>
-      <origin xyz="0.001105837616 6.29701941906e-05 -0.0121405072267" rpy="-1.55815208982 1.48889088527 3.13547753345"/>
+      <origin xyz="0.01105837616 0.000629701941906 -0.121405072267" rpy="-1.55815208982 1.48889088527 3.13547753345"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.853256366690001e-06" ixy="0.0" ixz="0.0" iyy="5.459171632320001e-06" iyz="0.0" izz="5.8119328981100015e-06"/>
+      <inertia ixx="0.0002853256366690001" ixy="0.0" ixz="0.0" iyy="0.0005459171632320001" iyz="0.0" izz="0.0005811932898110002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_014-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_014-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_014-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_014-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_middle0_mimic_joint" type="revolute">
-    <origin xyz="0.006840100000000001 -0.010563300000000001 -0.09071390000000001" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.068401 -0.105633 -0.907139" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_wrist_r_link"/>
     <child link="rarm_gripper_middle0_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rarm_gripper_middle1_mimic_link">
     <inertial>
-      <origin xyz="-0.00254249014477 -9.69275172196e-08 -0.0183183600739" rpy="-2.20036095392 -1.5707920767 0.629565330986"/>
+      <origin xyz="-0.0254249014477 -9.69275172196e-07 -0.183183600739" rpy="-2.20036095392 -1.5707920767 0.629565330986"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="3.224257894640001e-06" ixy="0.0" ixz="0.0" iyy="1.0515982208600003e-05" iyz="0.0" izz="1.1102891133900002e-05"/>
+      <inertia ixx="0.0003224257894640001" ixy="0.0" ixz="0.0" iyy="0.0010515982208600004" iyz="0.0" izz="0.0011102891133900003"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_013-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_013-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_013-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_013-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_middle1_mimic_joint" type="revolute">
-    <origin xyz="0.00498394 -8e-08 -0.029534700000000004" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0498394 -8e-07 -0.295347" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_gripper_middle0_mimic_link"/>
     <child link="rarm_gripper_middle1_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rarm_gripper_middle2_mimic_link">
     <inertial>
-      <origin xyz="-0.0037385815476700004 -7.47106866241e-08 -0.017509549652199998" rpy="1.570910155 -1.549632787 3.14147541343"/>
+      <origin xyz="-0.0373858154767 -7.47106866241e-07 -0.175095496522" rpy="1.570910155 -1.549632787 3.14147541343"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.5097153082400004e-06" ixy="0.0" ixz="0.0" iyy="6.172187358810001e-06" iyz="0.0" izz="6.473933572320002e-06"/>
+      <inertia ixx="0.00025097153082400005" ixy="0.0" ixz="0.0" iyy="0.0006172187358810001" iyz="0.0" izz="0.0006473933572320002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_012-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_012-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_012-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_012-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_middle2_mimic_joint" type="revolute">
-    <origin xyz="-1.1e-07 -1.2e-07 -0.0366376" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-1.1e-06 -1.2e-06 -0.366376" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_gripper_middle1_mimic_link"/>
     <child link="rarm_gripper_middle2_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rarm_gripper_index0_mimic_link">
     <inertial>
-      <origin xyz="0.00110581532824 6.2962567689e-05 -0.0121402969126" rpy="-1.55815154438 1.48889023113 3.13547843786"/>
+      <origin xyz="0.0110581532824 0.00062962567689 -0.121402969126" rpy="-1.55815154438 1.48889023113 3.13547843786"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.853258727220001e-06" ixy="0.0" ixz="0.0" iyy="5.4591729347400015e-06" iyz="0.0" izz="5.811934744060001e-06"/>
+      <inertia ixx="0.00028532587272200004" ixy="0.0" ixz="0.0" iyy="0.0005459172934740001" iyz="0.0" izz="0.0005811934744060001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_017-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_017-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_017-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_017-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_index0_mimic_joint" type="revolute">
-    <origin xyz="0.006840110000000001 -0.0310731 -0.0883256" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0684011 -0.310731 -0.883256" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_wrist_r_link"/>
     <child link="rarm_gripper_index0_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rarm_gripper_index1_mimic_link">
     <inertial>
-      <origin xyz="-0.00254251027454 -7.38867229166e-08 -0.0183185393552" rpy="-2.1885058243 -1.57079193482 0.617713340664"/>
+      <origin xyz="-0.0254251027454 -7.38867229166e-07 -0.183185393552" rpy="-2.1885058243 -1.57079193482 0.617713340664"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="3.2242632456000006e-06" ixy="0.0" ixz="0.0" iyy="1.0515982803100003e-05" iyz="0.0" izz="1.1102899110700002e-05"/>
+      <inertia ixx="0.00032242632456000003" ixy="0.0" ixz="0.0" iyy="0.0010515982803100002" iyz="0.0" izz="0.0011102899110700002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_016-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_016-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_016-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_016-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_index1_mimic_joint" type="revolute">
-    <origin xyz="0.00498386 -9e-08 -0.029534700000000004" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0498386 -9e-07 -0.295347" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_gripper_index0_mimic_link"/>
     <child link="rarm_gripper_index1_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rarm_gripper_index2_mimic_link">
     <inertial>
-      <origin xyz="-0.0037386389539600003 -5.46007794272e-08 -0.0175096332328" rpy="1.57066187528 1.5496317769 -0.00013008681642"/>
+      <origin xyz="-0.0373863895396 -5.46007794272e-07 -0.175096332328" rpy="1.57066187528 1.5496317769 -0.00013008681642"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.5097194321200005e-06" ixy="0.0" ixz="0.0" iyy="6.172191261500001e-06" iyz="0.0" izz="6.473941964420002e-06"/>
+      <inertia ixx="0.00025097194321200005" ixy="0.0" ixz="0.0" iyy="0.0006172191261500001" iyz="0.0" izz="0.0006473941964420002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_015-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_015-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_015-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_015-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_index2_mimic_joint" type="revolute">
-    <origin xyz="-1.3e-07 -1e-07 -0.0366376" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-1.3e-06 -1e-06 -0.366376" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_gripper_index1_mimic_link"/>
     <child link="rarm_gripper_index2_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rarm_gripper_little0_mimic_link">
     <inertial>
-      <origin xyz="0.00110578616033 6.29839343694e-05 -0.012140392363200001" rpy="-1.55814957571 1.48889068999 3.13547417851"/>
+      <origin xyz="0.0110578616033 0.000629839343694 -0.121403923632" rpy="-1.55814957571 1.48889068999 3.13547417851"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.853256068690001e-06" ixy="0.0" ixz="0.0" iyy="5.459170887530002e-06" iyz="0.0" izz="5.811930229570002e-06"/>
+      <inertia ixx="0.00028532560686900005" ixy="0.0" ixz="0.0" iyy="0.0005459170887530002" iyz="0.0" izz="0.0005811930229570002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_020-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_020-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_020-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_020-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_little0_mimic_joint" type="revolute">
-    <origin xyz="0.00684013 0.0310821 -0.08129650000000001" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0684013 0.310821 -0.812965" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_wrist_r_link"/>
     <child link="rarm_gripper_little0_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rarm_gripper_little1_mimic_link">
     <inertial>
-      <origin xyz="-0.00254246032354 -1.02561798099e-07 -0.0183183234988" rpy="-0.893658831543 1.57079184538 -2.46445658322"/>
+      <origin xyz="-0.0254246032354 -1.02561798099e-06 -0.183183234988" rpy="-0.893658831543 1.57079184538 -2.46445658322"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="3.2242599910000013e-06" ixy="0.0" ixz="0.0" iyy="1.0515981022000004e-05" iyz="0.0" izz="1.1102894912500004e-05"/>
+      <inertia ixx="0.0003224259991000001" ixy="0.0" ixz="0.0" iyy="0.0010515981022000004" iyz="0.0" izz="0.0011102894912500003"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_019-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_019-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_019-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_019-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_little1_mimic_joint" type="revolute">
-    <origin xyz="0.00498386 -8e-08 -0.029534700000000004" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0498386 -8e-07 -0.295347" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_gripper_little0_mimic_link"/>
     <child link="rarm_gripper_little1_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rarm_gripper_little2_mimic_link">
     <inertial>
-      <origin xyz="-0.00373859989755 -2.58753470556e-08 -0.0175095659068" rpy="1.57091259012 -1.54963275324 3.14146813471"/>
+      <origin xyz="-0.0373859989755 -2.58753470556e-07 -0.175095659068" rpy="1.57091259012 -1.54963275324 3.14146813471"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.5097176679100002e-06" ixy="0.0" ixz="0.0" iyy="6.172187020750001e-06" iyz="0.0" izz="6.473934178620002e-06"/>
+      <inertia ixx="0.00025097176679100006" ixy="0.0" ixz="0.0" iyy="0.0006172187020750001" iyz="0.0" izz="0.0006473934178620001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_018-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_018-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_018-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_018-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_little2_mimic_joint" type="revolute">
-    <origin xyz="-1e-07 -1.1e-07 -0.0366376" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-1e-06 -1.1e-06 -0.366376" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_gripper_little1_mimic_link"/>
     <child link="rarm_gripper_little2_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rarm_gripper_ring0_mimic_link">
     <inertial>
-      <origin xyz="0.00110580856946 6.30036216991e-05 -0.012140419170100001" rpy="-1.55815828146 1.48889040458 3.13548168598"/>
+      <origin xyz="0.0110580856946 0.000630036216991 -0.121404191701" rpy="-1.55815828146 1.48889040458 3.13548168598"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.853255938550001e-06" ixy="0.0" ixz="0.0" iyy="5.459171674770002e-06" iyz="0.0" izz="5.811930551410001e-06"/>
+      <inertia ixx="0.00028532559385500007" ixy="0.0" ixz="0.0" iyy="0.0005459171674770002" iyz="0.0" izz="0.0005811930551410001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_074-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_074-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_074-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_074-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_ring0_mimic_joint" type="revolute">
-    <origin xyz="0.006840150000000001 0.009890500000000002 -0.0872841" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0684015 0.098905 -0.872841" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_wrist_r_link"/>
     <child link="rarm_gripper_ring0_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rarm_gripper_ring1_mimic_link">
     <inertial>
-      <origin xyz="-0.0025425647930100003 -1.11178553666e-07 -0.018318414877200002" rpy="-2.19452392856 -1.57079196371 0.623735417599"/>
+      <origin xyz="-0.0254256479301 -1.11178553666e-06 -0.183184148772" rpy="-2.19452392856 -1.57079196371 0.623735417599"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="3.224263777490001e-06" ixy="0.0" ixz="0.0" iyy="1.0515978113100002e-05" iyz="0.0" izz="1.1102892925100003e-05"/>
+      <inertia ixx="0.0003224263777490001" ixy="0.0" ixz="0.0" iyy="0.0010515978113100001" iyz="0.0" izz="0.0011102892925100004"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_073-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_073-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_073-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_073-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_ring1_mimic_joint" type="revolute">
-    <origin xyz="0.00498388 -9e-08 -0.029534700000000004" rpy="-9.99999997475e-07 -0.0 0.0"/>
+    <origin xyz="0.0498388 -9e-07 -0.295347" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_gripper_ring0_mimic_link"/>
     <child link="rarm_gripper_ring1_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rarm_gripper_ring2_mimic_link">
     <inertial>
-      <origin xyz="-0.00373865496779 -6.52731251122e-08 -0.017509668832799998" rpy="1.57068315575 1.54963299736 -0.000112486955871"/>
+      <origin xyz="-0.0373865496779 -6.52731251122e-07 -0.175096688328" rpy="1.57068315575 1.54963299736 -0.000112486955871"/>
       <mass value="0.05000000000000001"/>
-      <inertia ixx="2.5097180796300006e-06" ixy="0.0" ixz="0.0" iyy="6.172191813440001e-06" iyz="0.0" izz="6.473938686760002e-06"/>
+      <inertia ixx="0.00025097180796300006" ixy="0.0" ixz="0.0" iyy="0.0006172191813440002" iyz="0.0" izz="0.0006473938686760002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_072-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_072-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_072-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_072-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rarm_gripper_ring2_mimic_joint" type="revolute">
-    <origin xyz="-1.1e-07 -1e-07 -0.0366376" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-1.1e-06 -1e-06 -0.366376" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rarm_gripper_ring1_mimic_link"/>
     <child link="rarm_gripper_ring2_mimic_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.163624617375" upper="1.9634954084875" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rarm_gripper_joint" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_081_link">
     <inertial>
-      <origin xyz="-0.0779971464671 0.000259695623861 0.031018420690400002" rpy="-0.611284672866 -0.60118272567 -2.2702328905"/>
+      <origin xyz="-0.779971464671 0.00259695623861 0.310184206904" rpy="-0.611284672866 -0.60118272567 -2.2702328905"/>
       <mass value="0.6646729054390002"/>
-      <inertia ixx="0.003162406082140001" ixy="0.0" ixz="0.0" iyy="0.0031976836406100006" iyz="0.0" izz="0.0037988762082200008"/>
+      <inertia ixx="0.3162406082140001" ixy="0.0" ixz="0.0" iyy="0.31976836406100007" iyz="0.0" izz="0.37988762082200006"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_079-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_079-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_079-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_079-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rx78_Null_081_joint" type="fixed">
-    <origin xyz="-0.0279999 -4e-08 3.05e-06" rpy="-3.0000001061e-06 -0.0 0.0"/>
+    <origin xyz="-0.279999 -4e-07 3.05e-05" rpy="-3.0000001061e-06 -0.0 0.0"/>
     <parent link="rarm_shoulder_p_link"/>
     <child link="rx78_Null_081_link"/>
   </joint>
   <link name="rx78_Null_082_link"/>
   <joint name="rx78_Null_082_joint" type="fixed">
-    <origin xyz="-5e-08 -0.13028700000000001 -0.0837529" rpy="0.0349060820064 -0.0 0.0"/>
+    <origin xyz="-5e-07 -1.30287 -0.837529" rpy="0.0349060820064 -0.0 0.0"/>
     <parent link="torso_waist_p2_link"/>
     <child link="rx78_Null_082_link"/>
   </joint>
   <link name="rx78_Null_083_link">
     <inertial>
-      <origin xyz="0.000465368143716 -0.00303856495598 -0.0284001144339" rpy="1.58201312706 0.047470470209 -1.56977052882"/>
+      <origin xyz="0.00465368143716 -0.0303856495598 -0.284001144339" rpy="1.58201312706 0.047470470209 -1.56977052882"/>
       <mass value="1.4674323404800003"/>
-      <inertia ixx="0.011024859312500003" ixy="0.0" ixz="0.0" iyy="0.019518697817200004" iyz="0.0" izz="0.024299428328300007"/>
+      <inertia ixx="1.1024859312500004" ixy="0.0" ixz="0.0" iyy="1.9518697817200004" iyz="0.0" izz="2.4299428328300006"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_044-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_044-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_044-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_044-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rx78_Null_083_joint" type="fixed">
-    <origin xyz="0.0 0.0 1.1500000000000001" rpy="0.0 -0.0 1.57079632679"/>
+    <origin xyz="0.0 0.0 11.5" rpy="0.0 -0.0 1.57079632679"/>
     <parent link="base_link"/>
     <child link="rx78_Null_083_link"/>
   </joint>
   <link name="rleg_crotch_p_front_mimic_link">
     <inertial>
-      <origin xyz="-0.0451486735878 -0.0232703353033 -0.0681505055795" rpy="1.43719365047 1.40508022813 -0.110554559796"/>
+      <origin xyz="-0.451486735878 -0.232703353033 -0.681505055795" rpy="1.43719365047 1.40508022813 -0.110554559796"/>
       <mass value="0.16491388565700005"/>
-      <inertia ixx="0.0003455401669300001" ixy="0.0" ixz="0.0" iyy="0.0004876002119890001" iyz="0.0" izz="0.0007474229335500002"/>
+      <inertia ixx="0.03455401669300001" ixy="0.0" ixz="0.0" iyy="0.04876002119890001" iyz="0.0" izz="0.07474229335500002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_085-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_085-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_085-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_085-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rleg_crotch_p_front_mimic_joint" type="revolute">
-    <origin xyz="-0.07600000000000001 -0.109713 0.046996100000000006" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-0.76 -1.09713 0.469961" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rx78_Null_083_link"/>
     <child link="rleg_crotch_p_front_mimic_link"/>
-    <limit effort="1000000000" lower="-0.785398163397" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.98174770424375" upper="0.6544984695" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rleg_crotch_p_joint" multiplier="0.5"/>
   </joint>
   <link name="rleg_crotch_p_back_mimic_link">
     <inertial>
-      <origin xyz="-0.043151187724000006 0.025300767852500003 -0.0681617729826" rpy="1.43747196906 -1.40542884503 -3.03124447499"/>
+      <origin xyz="-0.43151187724 0.253007678525 -0.681617729826" rpy="1.43747196906 -1.40542884503 -3.03124447499"/>
       <mass value="0.16494426265200002"/>
-      <inertia ixx="0.00034559374623900006" ixy="0.0" ixz="0.0" iyy="0.0004876468845370002" iyz="0.0" izz="0.0007474844504520002"/>
+      <inertia ixx="0.034559374623900005" ixy="0.0" ixz="0.0" iyy="0.048764688453700016" iyz="0.0" izz="0.07474844504520002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_025-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_025-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_025-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_025-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rleg_crotch_p_back_mimic_joint" type="revolute">
-    <origin xyz="-0.07600000000000001 0.11028700000000001 0.0470002" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-0.76 1.10287 0.470002" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rx78_Null_083_link"/>
     <child link="rleg_crotch_p_back_mimic_link"/>
-    <limit effort="1000000000" lower="-0.785398163397" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.98174770424375" upper="0.6544984695" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rleg_crotch_p_joint" multiplier="0.5"/>
   </joint>
   <link name="rleg_crotch_r_mimic_link">
     <inertial>
-      <origin xyz="-0.022393887551 -0.00028688023061200003 -0.0491257256755" rpy="-4.80069702412e-07 1.50313514013 -8.14080038208e-07"/>
+      <origin xyz="-0.22393887551 -0.00286880230612 -0.491257256755" rpy="-4.80069702412e-07 1.50313514013 -8.14080038208e-07"/>
       <mass value="0.22526872775100004"/>
-      <inertia ixx="0.0005327791297930001" ixy="0.0" ixz="0.0" iyy="0.0008245237736570002" iyz="0.0" izz="0.0012419268681400004"/>
+      <inertia ixx="0.05327791297930001" ixy="0.0" ixz="0.0" iyy="0.08245237736570002" iyz="0.0" izz="0.12419268681400003"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_026-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_026-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_026-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_026-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rleg_crotch_r_mimic_joint" type="revolute">
-    <origin xyz="-0.182901 0.00028688 0.0398817" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-1.82901 0.0028688 0.398817" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
     <parent link="rx78_Null_083_link"/>
     <child link="rleg_crotch_r_mimic_link"/>
-    <limit effort="1000000000" lower="-0.471238898038" upper="0.209439510239" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.5890486225477499" upper="0.26179938779925" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rleg_crotch_r_joint" multiplier="0.6"/>
   </joint>
   <link name="lleg_crotch_p_back_mimic_link">
     <inertial>
-      <origin xyz="0.043151207586 0.025300758170100003 -0.0681617755843" rpy="-1.43747369011 -1.4054287784 -0.110346161674"/>
+      <origin xyz="0.43151207586 0.253007581701 -0.681617755843" rpy="-1.43747369011 -1.4054287784 -0.110346161674"/>
       <mass value="0.16494428947500003"/>
-      <inertia ixx="0.0003455938203980001" ixy="0.0" ixz="0.0" iyy="0.0004876469329920001" iyz="0.0" izz="0.0007474845401350002"/>
+      <inertia ixx="0.03455938203980001" ixy="0.0" ixz="0.0" iyy="0.04876469329920001" iyz="0.0" izz="0.07474845401350001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_027-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_027-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_027-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_027-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="lleg_crotch_p_back_mimic_joint" type="revolute">
-    <origin xyz="0.07600000000000001 0.11028700000000001 0.0470002" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.76 1.10287 0.470002" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rx78_Null_083_link"/>
     <child link="lleg_crotch_p_back_mimic_link"/>
-    <limit effort="1000000000" lower="-0.785398163397" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.98174770424375" upper="0.6544984695" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="lleg_crotch_p_joint" multiplier="0.5"/>
   </joint>
   <link name="lleg_crotch_p_front_mimic_link">
     <inertial>
-      <origin xyz="0.045151218201500004 -0.023274532148 -0.0681620810725" rpy="-1.43747477266 1.40542875243 -3.03124695517"/>
+      <origin xyz="0.451512182015 -0.23274532148 -0.681620810725" rpy="-1.43747477266 1.40542875243 -3.03124695517"/>
       <mass value="0.16494427124700003"/>
-      <inertia ixx="0.00034559378548800005" ixy="0.0" ixz="0.0" iyy="0.00048764689364200013" iyz="0.0" izz="0.0007474844409740001"/>
+      <inertia ixx="0.03455937854880001" ixy="0.0" ixz="0.0" iyy="0.04876468936420002" iyz="0.0" izz="0.07474844409740002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_028-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_028-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_028-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_028-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="lleg_crotch_p_front_mimic_joint" type="revolute">
-    <origin xyz="0.07600000000000001 -0.109713 0.0470002" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.76 -1.09713 0.470002" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rx78_Null_083_link"/>
     <child link="lleg_crotch_p_front_mimic_link"/>
-    <limit effort="1000000000" lower="-0.785398163397" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.98174770424375" upper="0.6544984695" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="lleg_crotch_p_joint" multiplier="0.5"/>
   </joint>
   <link name="lleg_crotch_r_mimic_link">
     <inertial>
-      <origin xyz="0.022393911258 -0.000286868105768 -0.04912572596920001" rpy="3.14159261997 1.5031351592 -3.14159221828"/>
+      <origin xyz="0.22393911258 -0.00286868105768 -0.491257259692" rpy="3.14159261997 1.5031351592 -3.14159221828"/>
       <mass value="0.22526873679700005"/>
-      <inertia ixx="0.0005327791635100002" ixy="0.0" ixz="0.0" iyy="0.0008245237766010002" iyz="0.0" izz="0.0012419268850700003"/>
+      <inertia ixx="0.053277916351000015" ixy="0.0" ixz="0.0" iyy="0.08245237766010002" iyz="0.0" izz="0.12419268850700003"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_043-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_043-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_043-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_043-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="lleg_crotch_r_mimic_joint" type="revolute">
-    <origin xyz="0.182901 0.00028688 0.0398817" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="1.82901 0.0028688 0.398817" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
     <parent link="rx78_Null_083_link"/>
     <child link="lleg_crotch_r_mimic_link"/>
-    <limit effort="1000000000" lower="-0.471238898038" upper="0.209439510239" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.5890486225477499" upper="0.26179938779925" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="lleg_crotch_r_joint" multiplier="-0.6"/>
   </joint>
   <link name="lleg_crotch_p_link">
     <inertial>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.20480000000000007"/>
-      <inertia ixx="0.00021845333333300005" ixy="0.0" ixz="0.0" iyy="0.00021845333333300005" iyz="0.0" izz="0.00021845333333300005"/>
+      <inertia ixx="0.021845333333300007" ixy="0.0" ixz="0.0" iyy="0.021845333333300007" iyz="0.0" izz="0.021845333333300007"/>
     </inertial>
     <collision>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <box size="0.8 0.8 0.8"/>
       </geometry>
     </collision>
   </link>
   <joint name="lleg_crotch_p_joint" type="revolute">
-    <origin xyz="0.11499999999999999 0.0 -0.053548399999999996" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="1.15 0.0 -0.535484" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rx78_Null_083_link"/>
     <child link="lleg_crotch_p_link"/>
-    <limit effort="1000000000" lower="-1.57079632679" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.57079632679" upper="1.0471975512" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="lleg_crotch_r_link">
     <inertial>
-      <origin xyz="0.00135019144334 2.68670539385e-09 -0.007576144120250001" rpy="2.55979362589e-06 1.3842209329 2.67360360654e-06"/>
+      <origin xyz="0.0135019144334 2.68670539385e-08 -0.0757614412025" rpy="2.55979362589e-06 1.3842209329 2.67360360654e-06"/>
       <mass value="0.2826368379590001"/>
-      <inertia ixx="0.0007375352300290002" ixy="0.0" ixz="0.0" iyy="0.0007848054628520003" iyz="0.0" izz="0.0008267859221050002"/>
+      <inertia ixx="0.07375352300290001" ixy="0.0" ixz="0.0" iyy="0.07848054628520003" iyz="0.0" izz="0.08267859221050002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_029-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_029-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_029-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_029-lib.dae"/>
       </geometry>
     </collision>
   </link>
@@ -1718,245 +1718,245 @@
     <axis xyz="0 -1 0"/>
     <parent link="lleg_crotch_p_link"/>
     <child link="lleg_crotch_r_link"/>
-    <limit effort="1000000000" lower="-0.349065850399" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.349065850399" upper="0.785398163397" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="lleg_crotch_y_link">
     <inertial>
-      <origin xyz="-0.000207627232164 0.00020425513993300003 -0.131863673939" rpy="1.63965095087 1.56807010045 1.64122862329"/>
+      <origin xyz="-0.00207627232164 0.00204255139933 -1.31863673939" rpy="1.63965095087 1.56807010045 1.64122862329"/>
       <mass value="1.3734577470800002"/>
-      <inertia ixx="0.004486658785820001" ixy="0.0" ixz="0.0" iyy="0.011157313408000002" iyz="0.0" izz="0.011693709861000002"/>
+      <inertia ixx="0.44866587858200013" ixy="0.0" ixz="0.0" iyy="1.1157313408000002" iyz="0.0" izz="1.1693709861000003"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_042-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_042-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_042-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_042-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="lleg_crotch_y_joint" type="revolute">
-    <origin xyz="-1e-08 0.0 -0.0684516" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-1e-07 0.0 -0.684516" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 0 1"/>
     <parent link="lleg_crotch_r_link"/>
     <child link="lleg_crotch_y_link"/>
-    <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="lleg_knee_p_link">
     <inertial>
-      <origin xyz="-4.5423937806300006e-08 -0.027348107568800004 -0.040599844847500004" rpy="1.57079664461 1.29800693337 1.57079676387"/>
+      <origin xyz="-4.54239378063e-07 -0.273481075688 -0.405998448475" rpy="1.57079664461 1.29800693337 1.57079676387"/>
       <mass value="0.5361386332740001"/>
-      <inertia ixx="0.0013831471175700003" ixy="0.0" ixz="0.0" iyy="0.0014622434522800004" iyz="0.0" izz="0.0017877376383700003"/>
+      <inertia ixx="0.13831471175700003" ixy="0.0" ixz="0.0" iyy="0.14622434522800004" iyz="0.0" izz="0.17877376383700003"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_041-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_041-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_041-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_041-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="lleg_knee_p_joint" type="revolute">
-    <origin xyz="0.0 0.0423796 -0.271182" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0 0.423796 -2.71182" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="lleg_crotch_y_link"/>
     <child link="lleg_knee_p_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="lleg_knee_p2_link">
     <inertial>
-      <origin xyz="-0.000305121767144 -0.0207919386347 -0.277167128322" rpy="-1.54932008157 -1.49182608357 -1.58283392671"/>
+      <origin xyz="-0.00305121767144 -0.207919386347 -2.77167128322" rpy="-1.54932008157 -1.49182608357 -1.58283392671"/>
       <mass value="5.927780104480001"/>
-      <inertia ixx="0.03211759772500001" ixy="0.0" ixz="0.0" iyy="0.19309590571100005" iyz="0.0" izz="0.20334857548400004"/>
+      <inertia ixx="3.2117597725000007" ixy="0.0" ixz="0.0" iyy="19.309590571100006" iyz="0.0" izz="20.334857548400006"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_030-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_030-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_030-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_030-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="lleg_knee_p2_joint" type="revolute">
-    <origin xyz="-3e-08 -0.0162996 -0.0408183" rpy="-9.99999997475e-07 -0.0 0.0"/>
+    <origin xyz="-3e-07 -0.162996 -0.408183" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="lleg_knee_p_link"/>
     <child link="lleg_knee_p2_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="lleg_ankle_p_link">
     <inertial>
-      <origin xyz="-1.10347495383e-07 -0.0350898790503 -0.035127002832100004" rpy="1.57079502761 -0.226744998929 1.57079613506"/>
+      <origin xyz="-1.10347495383e-06 -0.350898790503 -0.351270028321" rpy="1.57079502761 -0.226744998929 1.57079613506"/>
       <mass value="0.3903954127000001"/>
-      <inertia ixx="0.0009766212890470003" ixy="0.0" ixz="0.0" iyy="0.0020901397560400005" iyz="0.0" izz="0.0020967538702900005"/>
+      <inertia ixx="0.09766212890470002" ixy="0.0" ixz="0.0" iyy="0.20901397560400004" iyz="0.0" izz="0.20967538702900004"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_040-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_040-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_040-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_040-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="lleg_ankle_p_joint" type="revolute">
-    <origin xyz="2.8e-07 0.0221803 -0.602553" rpy="0.0 1.99999999495e-06 0.0"/>
+    <origin xyz="2.8e-06 0.221803 -6.02553" rpy="0.0 1.99999999495e-06 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="lleg_knee_p2_link"/>
     <child link="lleg_ankle_p_link"/>
-    <limit effort="1000000000" lower="-1.0471975512" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.0471975512" upper="1.0471975512" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="lleg_ankle_r_mimic_link">
     <inertial>
-      <origin xyz="0.0299423753427 0.00120209966573 -0.0266363524064" rpy="-2.69339193574 -0.0202631114009 1.57202960626"/>
+      <origin xyz="0.299423753427 0.0120209966573 -0.266363524064" rpy="-2.69339193574 -0.0202631114009 1.57202960626"/>
       <mass value="0.3286518607370001"/>
-      <inertia ixx="0.0009113475299380003" ixy="0.0" ixz="0.0" iyy="0.0013661804619400002" iyz="0.0" izz="0.0016042853648900006"/>
+      <inertia ixx="0.09113475299380003" ixy="0.0" ixz="0.0" iyy="0.13661804619400003" iyz="0.0" izz="0.16042853648900005"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_032-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_032-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_032-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_032-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="lleg_ankle_r_mimic_joint" type="revolute">
-    <origin xyz="1.9e-07 -6e-08 -0.0716289" rpy="0.0 -0.0 1.57079632679"/>
+    <origin xyz="1.9e-06 -6e-07 -0.716289" rpy="0.0 -0.0 1.57079632679"/>
     <axis xyz="-1 0 0"/>
     <parent link="lleg_ankle_p_link"/>
     <child link="lleg_ankle_r_mimic_link"/>
-    <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.6544984694975" upper="0.6544984694975" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="lleg_ankle_r_joint" multiplier="1.0"/>
   </joint>
   <link name="lleg_ankle_r_link">
     <inertial>
-      <origin xyz="-0.025505132006 6.25745095782e-05 -0.0128349458313" rpy="-3.13340080113 0.225072169641 0.0138419268414"/>
+      <origin xyz="-0.25505132006 0.000625745095782 -0.128349458313" rpy="-3.13340080113 0.225072169641 0.0138419268414"/>
       <mass value="0.9173869683910002"/>
-      <inertia ixx="0.003801118570760001" ixy="0.0" ixz="0.0" iyy="0.0068655517756700014" iyz="0.0" izz="0.008649516856150003"/>
+      <inertia ixx="0.3801118570760001" ixy="0.0" ixz="0.0" iyy="0.6865551775670001" iyz="0.0" izz="0.8649516856150001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_034-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_034-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_034-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_034-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="lleg_ankle_r_joint" type="revolute">
-    <origin xyz="2.5000000000000004e-07 -0.144559 -0.0716288" rpy="0.0 -0.0 1.57079632679"/>
+    <origin xyz="2.5e-06 -1.44559 -0.716288" rpy="0.0 -0.0 1.57079632679"/>
     <axis xyz="-1 0 0"/>
     <parent link="lleg_ankle_p_link"/>
     <child link="lleg_ankle_r_link"/>
-    <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rx78_Null_042_link"/>
   <joint name="rx78_Null_042_joint" type="fixed">
-    <origin xyz="-0.130974 0.0373955 -0.053872500000000004" rpy="3.14159265359 9.99999997475e-07 -1.57079632679"/>
+    <origin xyz="-1.30974 0.373955 -0.538725" rpy="3.14159265359 9.99999997475e-07 -1.57079632679"/>
     <parent link="lleg_ankle_r_link"/>
     <child link="rx78_Null_042_link"/>
   </joint>
   <link name="rx78_Null_043_link"/>
   <joint name="rx78_Null_043_joint" type="fixed">
-    <origin xyz="-0.130974 -0.037403700000000005 -0.053872500000000004" rpy="3.14159265359 9.99999997475e-07 -1.57079632679"/>
+    <origin xyz="-1.30974 -0.374037 -0.538725" rpy="3.14159265359 9.99999997475e-07 -1.57079632679"/>
     <parent link="lleg_ankle_r_link"/>
     <child link="rx78_Null_043_link"/>
   </joint>
   <link name="rx78_Null_044_link"/>
   <joint name="rx78_Null_044_joint" type="fixed">
-    <origin xyz="0.057326100000000005 0.0801901 -0.0602815" rpy="0.0 9.99999997475e-07 -1.57079632679"/>
+    <origin xyz="0.573261 0.801901 -0.602815" rpy="0.0 9.99999997475e-07 -1.57079632679"/>
     <parent link="lleg_ankle_r_link"/>
     <child link="rx78_Null_044_link"/>
   </joint>
   <link name="rx78_Null_045_link"/>
   <joint name="rx78_Null_045_joint" type="fixed">
-    <origin xyz="0.057326 -0.08018990000000001 -0.060281600000000005" rpy="0.0 9.99999997475e-07 -1.57079632679"/>
+    <origin xyz="0.57326 -0.801899 -0.602816" rpy="0.0 9.99999997475e-07 -1.57079632679"/>
     <parent link="lleg_ankle_r_link"/>
     <child link="rx78_Null_045_link"/>
   </joint>
   <link name="lleg_ankle_p_mimic_link">
     <inertial>
-      <origin xyz="2.82212055625e-06 -0.0737319618093 0.0173155485748" rpy="-3.14150846626 0.237244874889 1.57143681594"/>
+      <origin xyz="2.82212055625e-05 -0.737319618093 0.173155485748" rpy="-3.14150846626 0.237244874889 1.57143681594"/>
       <mass value="0.7733571035090002"/>
-      <inertia ixx="0.003804804149820001" ixy="0.0" ixz="0.0" iyy="0.004011526114400001" iyz="0.0" izz="0.0062526698806000015"/>
+      <inertia ixx="0.3804804149820001" ixy="0.0" ixz="0.0" iyy="0.4011526114400001" iyz="0.0" izz="0.6252669880600001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_039-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_039-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_039-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_039-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="lleg_ankle_p_mimic_joint" type="revolute">
-    <origin xyz="1e-08 -1e-08 0.0" rpy="0.0 -9.99999997475e-07 0.0"/>
+    <origin xyz="1e-07 -1e-07 0.0" rpy="0.0 -9.99999997475e-07 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="lleg_ankle_p_link"/>
     <child link="lleg_ankle_p_mimic_link"/>
-    <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.6544984695" upper="0.6544984695" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="lleg_ankle_p_joint" multiplier="-0.5"/>
   </joint>
   <link name="rleg_crotch_p_link">
     <inertial>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.20480000000000007"/>
-      <inertia ixx="0.00021845333333300005" ixy="0.0" ixz="0.0" iyy="0.00021845333333300005" iyz="0.0" izz="0.00021845333333300005"/>
+      <inertia ixx="0.021845333333300007" ixy="0.0" ixz="0.0" iyy="0.021845333333300007" iyz="0.0" izz="0.021845333333300007"/>
     </inertial>
     <collision>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <box size="0.8 0.8 0.8"/>
       </geometry>
     </collision>
   </link>
   <joint name="rleg_crotch_p_joint" type="revolute">
-    <origin xyz="-0.11499999999999999 1e-08 -0.053548399999999996" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-1.15 1e-07 -0.535484" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rx78_Null_083_link"/>
     <child link="rleg_crotch_p_link"/>
-    <limit effort="1000000000" lower="-1.57079632679" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.57079632679" upper="1.0471975512" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rleg_crotch_r_link">
     <inertial>
-      <origin xyz="-0.0013515320905200003 2.64767762102e-07 -0.007576873362660001" rpy="3.14098251543 1.38399750739 3.14105439268"/>
+      <origin xyz="-0.0135153209052 2.64767762102e-06 -0.0757687336266" rpy="3.14098251543 1.38399750739 3.14105439268"/>
       <mass value="0.28264330076000005"/>
-      <inertia ixx="0.0007375639790160001" ixy="0.0" ixz="0.0" iyy="0.0007848479788970002" iyz="0.0" izz="0.0008268231436810001"/>
+      <inertia ixx="0.07375639790160002" ixy="0.0" ixz="0.0" iyy="0.07848479788970002" iyz="0.0" izz="0.08268231436810002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_086-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_086-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_086-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_086-lib.dae"/>
       </geometry>
     </collision>
   </link>
@@ -1965,208 +1965,208 @@
     <axis xyz="0 -1 0"/>
     <parent link="rleg_crotch_p_link"/>
     <child link="rleg_crotch_r_link"/>
-    <limit effort="1000000000" lower="-0.785398163397" upper="0.349065850399" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.785398163397" upper="0.349065850399" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rleg_crotch_y_link">
     <inertial>
-      <origin xyz="0.00020390114656500003 -0.000515317215416 -0.131974901174" rpy="-1.80118872878 1.55184586602 1.37327285919"/>
+      <origin xyz="0.00203901146565 -0.00515317215416 -1.31974901174" rpy="-1.80118872878 1.55184586602 1.37327285919"/>
       <mass value="1.4015034554000003"/>
-      <inertia ixx="0.004545366069940001" ixy="0.0" ixz="0.0" iyy="0.011230305839000003" iyz="0.0" izz="0.011849450843800003"/>
+      <inertia ixx="0.4545366069940001" ixy="0.0" ixz="0.0" iyy="1.1230305839000003" iyz="0.0" izz="1.1849450843800002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_024-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_024-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_024-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_024-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rleg_crotch_y_joint" type="revolute">
-    <origin xyz="0.0 0.0 -0.0684517" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.0 0.0 -0.684517" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 0 1"/>
     <parent link="rleg_crotch_r_link"/>
     <child link="rleg_crotch_y_link"/>
-    <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rleg_knee_p_link">
     <inertial>
-      <origin xyz="0.0007385576338690001 -0.026562501611900005 -0.0455509592631" rpy="1.41304149865 -0.794894894003 -1.4943966775"/>
+      <origin xyz="0.00738557633869 -0.265625016119 -0.455509592631" rpy="1.41304149865 -0.794894894003 -1.4943966775"/>
       <mass value="0.4603919647320001"/>
-      <inertia ixx="0.0012345036868700002" ixy="0.0" ixz="0.0" iyy="0.0013156943858200004" iyz="0.0" izz="0.0015240246048000004"/>
+      <inertia ixx="0.12345036868700002" ixy="0.0" ixz="0.0" iyy="0.13156943858200004" iyz="0.0" izz="0.15240246048000003"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_023-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_023-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_023-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_023-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rleg_knee_p_joint" type="revolute">
-    <origin xyz="1e-08 0.0423796 -0.271182" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="1e-07 0.423796 -2.71182" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rleg_crotch_y_link"/>
     <child link="rleg_knee_p_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rleg_knee_p2_link">
     <inertial>
-      <origin xyz="-0.0032002427935000004 -0.022012777264700002 -0.26567464422299997" rpy="1.82217474623 1.50400093429 1.86096188398"/>
+      <origin xyz="-0.032002427935 -0.220127772647 -2.65674644223" rpy="1.82217474623 1.50400093429 1.86096188398"/>
       <mass value="5.351785671250001"/>
-      <inertia ixx="0.03017421982570001" ixy="0.0" ixz="0.0" iyy="0.17440628678900005" iyz="0.0" izz="0.18453515755400005"/>
+      <inertia ixx="3.017421982570001" ixy="0.0" ixz="0.0" iyy="17.440628678900005" iyz="0.0" izz="18.453515755400005"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_087-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_087-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_087-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_087-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rleg_knee_p2_joint" type="revolute">
-    <origin xyz="-4.01e-06 -0.0162996 -0.0408183" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="-4.01e-05 -0.162996 -0.408183" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rleg_knee_p_link"/>
     <child link="rleg_knee_p2_link"/>
-    <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rleg_ankle_p_link">
     <inertial>
-      <origin xyz="3.06450046463e-05 -0.0350349044926 -0.0351267831403" rpy="1.57079068871 -0.227386769262 1.57079507041"/>
+      <origin xyz="0.000306450046463 -0.350349044926 -0.351267831403" rpy="1.57079068871 -0.227386769262 1.57079507041"/>
       <mass value="0.7807908539750001"/>
-      <inertia ixx="0.0019561157423800004" ixy="0.0" ixz="0.0" iyy="0.0041738377474200014" iyz="0.0" izz="0.004183850732690001"/>
+      <inertia ixx="0.19561157423800005" ixy="0.0" ixz="0.0" iyy="0.4173837747420001" iyz="0.0" izz="0.4183850732690001"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_022-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_022-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_022-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_022-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rleg_ankle_p_joint" type="revolute">
-    <origin xyz="-3.01e-05 0.022180400000000003 -0.602553" rpy="0.0 9.99999997475e-07 0.0"/>
+    <origin xyz="-0.000301 0.221804 -6.02553" rpy="0.0 9.99999997475e-07 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rleg_knee_p2_link"/>
     <child link="rleg_ankle_p_link"/>
-    <limit effort="1000000000" lower="-1.0471975512" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-1.0471975512" upper="1.0471975512" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rleg_ankle_r_mimic_link">
     <inertial>
-      <origin xyz="0.031418367597300004 -3.0684941641900006e-05 -0.0247403252761" rpy="2.71210529049 -5.83214996164e-06 -1.57077282755"/>
+      <origin xyz="0.314183675973 -0.000306849416419 -0.247403252761" rpy="2.71210529049 -5.83214996164e-06 -1.57077282755"/>
       <mass value="0.31210248290600007"/>
-      <inertia ixx="0.0008507847091370003" ixy="0.0" ixz="0.0" iyy="0.0012940090888400003" iyz="0.0" izz="0.0014964435707600005"/>
+      <inertia ixx="0.08507847091370002" ixy="0.0" ixz="0.0" iyy="0.12940090888400002" iyz="0.0" izz="0.14964435707600005"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_089-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_089-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_089-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_089-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rleg_ankle_r_mimic_joint" type="revolute">
-    <origin xyz="2.99e-06 -5e-08 -0.0716289" rpy="3.0000001061e-06 -0.0 1.5707763268"/>
+    <origin xyz="2.99e-05 -5e-07 -0.716289" rpy="3.0000001061e-06 -0.0 1.5707763268"/>
     <axis xyz="-1 0 0"/>
     <parent link="rleg_ankle_p_link"/>
     <child link="rleg_ankle_r_mimic_link"/>
-    <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.6544984694975" upper="0.6544984694975" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rleg_ankle_r_joint" multiplier="1.0"/>
   </joint>
   <link name="rleg_ankle_r_link">
     <inertial>
-      <origin xyz="-0.031274668051700004 0.000670553840076 -0.0158160608584" rpy="-3.12123810968 0.240489342154 0.0203922129746"/>
+      <origin xyz="-0.312746680517 0.00670553840076 -0.158160608584" rpy="-3.12123810968 0.240489342154 0.0203922129746"/>
       <mass value="1.0039317728700003"/>
-      <inertia ixx="0.0041084940638100005" ixy="0.0" ixz="0.0" iyy="0.007767842050010002" iyz="0.0" izz="0.009825975405180001"/>
+      <inertia ixx="0.4108494063810001" ixy="0.0" ixz="0.0" iyy="0.7767842050010002" iyz="0.0" izz="0.9825975405180002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_091-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_091-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_091-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_091-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rleg_ankle_r_joint" type="revolute">
-    <origin xyz="0.00011439000000000001 -0.14456100000000002 -0.0716286" rpy="4.99999987365e-06 -0.0 1.5707753268"/>
+    <origin xyz="0.0011439 -1.44561 -0.716286" rpy="4.99999987365e-06 -0.0 1.5707753268"/>
     <axis xyz="-1 0 0"/>
     <parent link="rleg_ankle_p_link"/>
     <child link="rleg_ankle_r_link"/>
-    <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
   </joint>
   <link name="rx78_Null_092_link"/>
   <joint name="rx78_Null_092_joint" type="fixed">
-    <origin xyz="-0.130973 0.0374846 -0.0538731" rpy="-3.14159165359 -3.999999989e-06 -1.5707753268"/>
+    <origin xyz="-1.30973 0.374846 -0.538731" rpy="-3.14159165359 -3.999999989e-06 -1.5707753268"/>
     <parent link="rleg_ankle_r_link"/>
     <child link="rx78_Null_092_link"/>
   </joint>
   <link name="rx78_Null_093_link"/>
   <joint name="rx78_Null_093_joint" type="fixed">
-    <origin xyz="-0.130971 -0.0373144 -0.053872699999999996" rpy="-3.14159165359 -3.999999989e-06 -1.5707753268"/>
+    <origin xyz="-1.30971 -0.373144 -0.538727" rpy="-3.14159165359 -3.999999989e-06 -1.5707753268"/>
     <parent link="rleg_ankle_r_link"/>
     <child link="rx78_Null_093_link"/>
   </joint>
   <link name="rx78_Null_094_link"/>
   <joint name="rx78_Null_094_joint" type="fixed">
-    <origin xyz="0.057326100000000005 0.08027450000000001 -0.060282100000000005" rpy="9.99999997475e-07 -3.999999989e-06 -1.5707753268"/>
+    <origin xyz="0.573261 0.802745 -0.602821" rpy="9.99999997475e-07 -3.999999989e-06 -1.5707753268"/>
     <parent link="rleg_ankle_r_link"/>
     <child link="rx78_Null_094_link"/>
   </joint>
   <link name="rx78_Null_095_link"/>
   <joint name="rx78_Null_095_joint" type="fixed">
-    <origin xyz="0.057329500000000005 -0.0801055 -0.0602814" rpy="9.99999997475e-07 -3.999999989e-06 -1.5707753268"/>
+    <origin xyz="0.573295 -0.801055 -0.602814" rpy="9.99999997475e-07 -3.999999989e-06 -1.5707753268"/>
     <parent link="rleg_ankle_r_link"/>
     <child link="rx78_Null_095_link"/>
   </joint>
   <link name="rleg_ankle_p_mimic_link">
     <inertial>
-      <origin xyz="3.0194695462400003e-05 -0.0736498802212 0.017315362975099998" rpy="3.14157717957 -0.237664673071 -1.57091308803"/>
+      <origin xyz="0.000301946954624 -0.736498802212 0.173153629751" rpy="3.14157717957 -0.237664673071 -1.57091308803"/>
       <mass value="0.7733991533620002"/>
-      <inertia ixx="0.003811557615720001" ixy="0.0" ixz="0.0" iyy="0.004004747522770001" iyz="0.0" izz="0.006252841407030002"/>
+      <inertia ixx="0.3811557615720001" ixy="0.0" ixz="0.0" iyy="0.4004747522770001" iyz="0.0" izz="0.6252841407030002"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_021-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_021-lib.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_021-lib.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_021-lib.dae"/>
       </geometry>
     </collision>
   </link>
   <joint name="rleg_ankle_p_mimic_joint" type="revolute">
-    <origin xyz="3e-08 1e-08 0.0" rpy="0.0 -9.99999997475e-07 0.0"/>
+    <origin xyz="3e-07 1e-07 0.0" rpy="0.0 -9.99999997475e-07 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="rleg_ankle_p_link"/>
     <child link="rleg_ankle_p_mimic_link"/>
-    <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <limit effort="100000.00000000001" lower="-0.6544984695" upper="0.6544984695" velocity="1000000"/>
+    <dynamics damping="0.30000000000000004" friction="1.0000000000000002"/>
     <mimic joint="rleg_ankle_p_joint" multiplier="-0.5"/>
   </joint>
   <gazebo reference="torso_waist_y_joint">
